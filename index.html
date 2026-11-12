@@ -398,6 +398,18 @@ section.block{padding:104px 0;border-bottom:1px solid var(--line)}
 .jy-foot{grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px}
 .jy-repo{display:inline-flex;align-items:center;gap:10px;padding:14px 20px;border-radius:999px;background:var(--c-yellow);color:var(--dark);font:600 15px/1 var(--body);text-decoration:none;transition:background .2s,transform .2s}
 .jy-repo:hover{background:var(--c-sage);transform:translateY(-2px)}
+
+/* Piano Piano card */
+.pp{margin-top:16px;display:grid;grid-template-columns:auto 1fr auto;gap:20px 32px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:28px 32px;transition:border-color .25s}
+.pp:hover{border-color:var(--c-yellow)}
+.pp-ic{width:64px;height:64px;border-radius:18px;background:var(--c-yellow);color:var(--dark);display:grid;place-items:center;font:700 26px/1 var(--display)}
+.pp-t{font:600 clamp(20px,2.4vw,26px)/1.15 var(--display);letter-spacing:-.02em;color:var(--ink);margin:0 0 8px}
+.pp-d{margin:0 0 12px;color:var(--text);font-size:15.5px;line-height:1.55;max-width:60ch}
+.pp-tags{display:flex;flex-wrap:wrap;gap:8px}
+.pp-tags>span{font:500 12px/1 var(--mono);color:var(--muted);border:1px solid var(--line);border-radius:8px;padding:7px 10px}
+.pp-btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:999px;background:var(--c-yellow);color:var(--dark);font:600 15px/1 var(--body);text-decoration:none;white-space:nowrap;transition:transform .2s,background .2s}
+.pp-btn:hover{background:var(--c-sage);transform:translateY(-2px)}
+@media (max-width:760px){.pp{grid-template-columns:1fr;padding:24px;gap:16px}.pp-ic{width:52px;height:52px;font-size:22px}.pp-btn{justify-self:start}}
 .gh{margin-top:16px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 24px;padding:24px 28px;border-radius:20px;border:1px dashed #3A3B42;text-decoration:none;transition:background .25s,border-color .25s,color .25s}
 .gh-l{font-size:16px;color:var(--text)}
 .gh-r{font:600 clamp(17px,2vw,22px)/1.2 var(--display);letter-spacing:-.02em}
@@ -755,6 +767,16 @@ section.block{padding:104px 0;border-bottom:1px solid var(--line)}
           <div class="tags"><span class="tag">Python 3.12</span><span class="tag">FastAPI</span><span class="tag">Supabase</span><span class="tag">Groq LLM + Whisper</span><span class="tag">Telegram Bot</span><span class="tag">Mini App</span><span class="tag">Google Calendar API</span><span class="tag">Render</span></div>
           <div class="jy-btns"><a class="jy-repo" href="https://t.me/julyera_bot"><span class="en">Try in Telegram</span><span class="ru">Попробовать в Telegram</span> <span aria-hidden="true">↗</span></a><a class="jy-code" href="https://github.com/yerassyl-alimkul/julyera-agent"><span class="en">View the code</span><span class="ru">Смотреть код</span> <span aria-hidden="true">↗</span></a></div>
         </div>
+      </article>
+
+      <article class="pp rv">
+        <div class="pp-ic" aria-hidden="true">PP</div>
+        <div>
+          <h3 class="pp-t">Piano Piano</h3>
+          <p class="pp-d"><span class="en">A mini-app for learning Italian from scratch: A1 course with 31 lessons, flashcards with spaced repetition, grammar, practice and awards. Built for my own studies in Messina, same design language as JulYera.</span><span class="ru">Мини-приложение для изучения итальянского с нуля: курс A1 (31 урок), карточки с интервальным повторением, грамматика, практика и награды. Сделал для себя, пока живу в Мессине, в том же стиле, что и JulYera.</span></p>
+          <div class="pp-tags"><span>A1 · 11 <span class="en">modules</span><span class="ru">модулей</span></span><span><span class="en">Flashcards</span><span class="ru">Карточки</span></span><span><span class="en">Telegram Mini App</span><span class="ru">Telegram Mini App</span></span></div>
+        </div>
+        <a class="pp-btn" href="https://claude.ai/artifact/S16SVNaBDUR8H45qxhwSCn" target="_blank" rel="noopener"><span class="en">Open the app</span><span class="ru">Открыть приложение</span> <span aria-hidden="true">↗</span></a>
       </article>
 
       <a class="gh" href="https://github.com/yerassyl-alimkul">
